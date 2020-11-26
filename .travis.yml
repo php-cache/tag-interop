@@ -4,6 +4,7 @@ sudo: false
 matrix:
     include:
       - php: 7.0
+      - php: 8.0
 
 cache:
     directories:

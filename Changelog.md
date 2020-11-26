@@ -6,4 +6,6 @@ The change log describes what is "Added", "Removed", "Changed" or "Fixed" betwee
 
 * First release
 
+## 1.1.0
 
+* PHP8 Support
