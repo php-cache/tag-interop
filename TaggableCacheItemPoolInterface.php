@@ -11,6 +11,7 @@
 
 namespace Cache\TagInterop;
 
+use Psr\Cache\CacheItemInterface;
 use Psr\Cache\CacheItemPoolInterface;
 use Psr\Cache\InvalidArgumentException;
 
@@ -49,12 +50,12 @@ interface TaggableCacheItemPoolInterface extends CacheItemPoolInterface
      *
      * @return TaggableCacheItemInterface
      */
-    public function getItem($key);
+    public function getItem(string $key): CacheItemInterface;
 
     /**
      * {@inheritdoc}
      *
      * @return array|\Traversable|TaggableCacheItemInterface[]
      */
-    public function getItems(array $keys = []);
+    public function getItems(array $keys = []): iterable;
 }
